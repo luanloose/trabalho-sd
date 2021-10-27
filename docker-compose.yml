@@ -7,7 +7,7 @@ services:
     volumes:
       - ./:/var/www
     working_dir: /var/www
-    command: php -S 0.0.0.0:81 -t /var/www/index.php
+    command: php -S 0.0.0.0:81 -t /var/www/
     ports:
       - "81:81"
       - "443:443"
