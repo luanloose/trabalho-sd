@@ -8,7 +8,7 @@ Trabalho
 
 2. Rodar o comando `docker-compose up -d` dentro do diretorio do projeto.
 
-3. Acessar o PhpMyAdmin no endereço http://localhost:81
+3. Acessar o PhpMyAdmin no endereço http://localhost:80
 
 4. Clicar no banco ´php´ e importar o shema ´employees.sql´
 
