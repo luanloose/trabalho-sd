@@ -10,7 +10,6 @@ services:
     command: php -S 0.0.0.0:81 -t /var/www/
     ports:
       - "81:81"
-      - "443:443"
     links:
       - db
     environment:
@@ -45,3 +44,12 @@ services:
       MYSQL_DATABASE: php
       MYSQL_USER: php
       MYSQL_PASSWORD: secret
+
+  portainer:
+    image: portainer/portainer-ce
+    ports:
+      - "9000:9000"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      - "./portainer:/data"
+    restart: unless-stopped
